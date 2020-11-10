@@ -28,3 +28,9 @@ ng --version
   - modifique "rxjs": "^6.0.0"para"rxjs": "6.0.0"
   -  Execute npm install
   -ng serve --open
+
+--> One Way Data Bind Componente para o template
+<h1>{{title}}</h1>
+
+<img [src]="url"
+[alt]="desciption"> // atributo
