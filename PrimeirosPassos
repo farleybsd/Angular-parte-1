@@ -49,3 +49,23 @@ na chave build
   "script":[
 
   ]
+
+  //Criando o primeiro componente
+
+  Criar uma pasta dentro Src/Nome Componente
+  Criar Nome Componente.Ts
+  Criar Nome Componente.Html
+
+Para chamar o componente em outro Componente
+usar o seu selector: 'ap-photo' 
+Nesse Exemplo iremos chamar em app.component.Html
+Exemplo da chamada <ap-photo></ap-photo>
+
+  Registrar o componente em um modulo
+
+  --> Abrir app.module
+  @NgModule({
+  declarations: [
+    AppComponent,
+    PhotoComponent// modulo novo dentro do mesmo modulo
+  ],
