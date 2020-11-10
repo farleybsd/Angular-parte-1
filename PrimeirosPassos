@@ -1,0 +1,30 @@
+
+Instalar Node
+a) Problema no certificado: no terminal, deve-se
+ executar o comando npm set strict-ssl false. 
+ Em seguida, é possível repetir a operação de 
+ instalação que falhou.
+
+ b) Redes de empresa ou proxy da rede: alguns 
+ usuários acessam a rede através de um proxy. 
+ Isso pode impedir que o npm tenha acesso ao 
+ seu repositório.
+ npm config set proxy http://proxy.company.com:8080
+npm config set https-proxy http://proxy.company.com:8080 
+
+-- Angular CLI, instalação e criação do projeto
+
+npm install -g @angular/cli@6.0.7 // instalação angular
+ng new alurapic // comando + nome do projeto
+cd my-dream-app // acessar diretorio do projeto
+ng serve --open // subir o servidor
+
+-- Vericando a instalação
+ng --version
+
+-- Se nao copitar no primeiro acesso
+
+-> Abrir package.json
+  - modifique "rxjs": "^6.0.0"para"rxjs": "6.0.0"
+  -  Execute npm install
+  -ng serve --open
