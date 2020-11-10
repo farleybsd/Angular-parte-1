@@ -34,3 +34,18 @@ ng --version
 
 <img [src]="url"
 [alt]="desciption"> // atributo
+
+-- Insatalando BootStraap
+
+ npm install bootstrap@4.1.1
+na chave build
+ --> Abrir o arquivo angular.json 
+  aletrar a chave
+  // Para css
+   "style":[
+
+  ]
+  // Para script js
+  "script":[
+
+  ]
