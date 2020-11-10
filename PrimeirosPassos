@@ -69,3 +69,16 @@ Exemplo da chamada <ap-photo></ap-photo>
     AppComponent,
     PhotoComponent// modulo novo dentro do mesmo modulo
   ],
+
+  Inbound properties: passando dados para o componente
+nesse caso esta app.component.Html
+Aonde Registra o component pode passar valores para suar classe porem os nomes tem q ser identicos
+<ap-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg" description="Leão"></ap-photo>
+<ap-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg" description="Leoa"></ap-photo>
+
+passando os valores para photo.component.ts
+export class PhotoComponent
+{
+   @Input() description="";
+   @Input() url="";
+}
