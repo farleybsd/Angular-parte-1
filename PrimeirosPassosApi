@@ -1,0 +1,22 @@
+vá até a pasta "api"
+npm install
+npm install --unsafe-perm -g sqlite3
+npm start
+Servidor escutando na porta: 3000
+Users
+{ user_id: 1,
+  user_name: 'flavio',
+  user_email: 'flavio@alurapic.com.br',
+  user_password: 123,
+  user_full_name: 'Flávio',
+  user_join_date: '2018-04-12 20:24:19' }
+Users
+{ user_id: 2,
+  user_name: 'almeida',
+  user_email: 'almeida@alurapic.com.br',
+  user_password: 123,
+  user_full_name: 'Almeida',
+  user_join_date: '2018-04-12 20:24:19' 
+  }
+}
+http://localhost:3000/flavio/photos
