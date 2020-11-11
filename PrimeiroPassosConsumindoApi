@@ -1,3 +1,17 @@
+HttpClient e injeção de dependência
+
+Primeiro Passo editar o arquivo app.modules.ts
+
+import {HttpClientModule} from '@angular/common/http';
+
+ imports: [
+    BrowserModule,
+    PhotosModule,// Agrupador de componentes no mesmo Modulo
+    HttpClientModule, // Fazer requisao Rest
+  ],
+
+-- No component
+
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
