@@ -82,3 +82,20 @@ export class PhotoComponent
    @Input() description="";
    @Input() url="";
 }
+
+Organizando nosso código em módulos ( Orzanizar todos os component que se registra no mesmo modulo)
+
+Criar uma pasta dentro
+
+--> Src
+    |--> App
+        |--> Photos
+             |--> photos.module.ts // configuração do modulo
+             |--> Criar a pasta do component nesse caso photo
+
+--> dentro do modulo app.module.ts
+Registrar o novo modulo com os component
+@NgModule({
+    declarations: [PhotoComponent], // privado
+    exports:[PhotoComponent] // publico
+})
