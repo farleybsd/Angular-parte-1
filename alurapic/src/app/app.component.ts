@@ -1,6 +1,6 @@
 import { PhotoService } from './Photos/photo/photo.service';
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,18 +8,24 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   photos: any[] = [];
 
-  constructor(photoSerive : PhotoService)
+  constructor(private photoSerive : PhotoService)
   {
-    photoSerive
+  }
+
+  //Ciclo de vida tipo DidMount React
+  ngOnInit(): void {
+
+    this.photoSerive
               .listFromUser('flavio')
               .subscribe(photo => {
                 console.log( "Usuario: " + photo[0].userId);
                 this.photos = photo
               });
+
   }
 
  }
