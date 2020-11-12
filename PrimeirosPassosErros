@@ -1,0 +1,8 @@
+ng generate module errors
+
+-- Criando Component de errors
+ng generate component errors/not-found
+
+-- Depois adcionar no app.routing.module
+
+-- depois adcionar em app modules
