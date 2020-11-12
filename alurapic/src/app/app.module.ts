@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing.module';
 //import { PhotoComponent } from './photo/photo.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,8 +14,9 @@ import { PhotosModule } from './Photos/photos.module';
   ],
   imports: [
     BrowserModule,
-    PhotosModule// Agrupador de componentes no mesmo Modulo
+    PhotosModule,// Agrupador de componentes no mesmo Modulo
    // HttpClientModule, // Fazer requisao Rest
+   AppRoutingModule // Rotas
   ],
   providers: [],
   bootstrap: [AppComponent]

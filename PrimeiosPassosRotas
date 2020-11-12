@@ -1,0 +1,14 @@
+-- Criando uma rota 
+
+-> Dentro da pasta app criar o arquivo
+                    |->app.routing.module.ts
+
+-> Depois Dentro app.module.ts
+fazer o registro app.routing.module.ts  
+
+-> Adcionar uma tag router no app.component.html
+<<router-outlet></router-outlet>
+
+http://localhost:4200/user/flavio
+http://localhost:4200/p/add
+vai ser carregado as rotoas com seu component dentro da div root
