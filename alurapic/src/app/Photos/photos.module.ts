@@ -4,6 +4,7 @@ import { PhotoComponent } from './photo/photo.component';
 
 import { NgModule } from "@angular/core";
 import { PhotoListComponent } from './photo-list/photo-list.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -11,7 +12,10 @@ import { PhotoListComponent } from './photo-list/photo-list.component';
        PhotoListComponent
       ], // privado
     exports:[PhotoComponent], // publico
-    imports: [HttpClientModule]
+    imports: [
+      HttpClientModule,
+      CommonModule // Boa Pratica
+    ]
 })
 export class PhotosModule{
 
