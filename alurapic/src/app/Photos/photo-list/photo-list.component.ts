@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { PhotoService } from '../photo/photo.service';
 
 @Component({
@@ -10,17 +11,23 @@ export class PhotoListComponent implements OnInit {
 
   photos: any[] = [];
 
-  constructor(private photoSerive : PhotoService)
+  constructor(
+    private photoSerive : PhotoService,
+    private activateRoute: ActivatedRoute
+
+    )
   {
   }
 
   //Ciclo de vida tipo DidMount React
   ngOnInit(): void {
 
+    const userName = this.activateRoute.snapshot.params.userName; //userName vem da route
+
     this.photoSerive
-              .listFromUser('flavio')
+              .listFromUser(userName)
               .subscribe(photo => {
-                console.log( "Usuario: " + photo[0].userId);
+                //console.log( "Usuario: " + photo[0].userId);
                 this.photos = photo
               });
 
