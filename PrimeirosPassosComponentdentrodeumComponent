@@ -1,0 +1,5 @@
+ng generate component photos/photo-list/photos
+
+photos = modulo 
+photo-list = component
+photos = component novo
