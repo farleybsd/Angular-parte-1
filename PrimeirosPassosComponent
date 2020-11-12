@@ -1,0 +1,3 @@
+-- Criando Component
+ng generate component photos/photo-list
+
