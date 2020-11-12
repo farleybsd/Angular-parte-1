@@ -10,13 +10,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  photos: object[] = [];
+  photos: any[] = [];
 
   constructor(photoSerive : PhotoService)
   {
     photoSerive
               .listFromUser('flavio')
-              .subscribe(photo => this.photos = photo);
+              .subscribe(photo => {
+                console.log( "Usuario: " + photo[0].userId);
+                this.photos = photo
+              });
   }
 
  }
