@@ -1,0 +1,3 @@
+Organizando ainda mais nossa aplicação
+
+ng generate component photo/photo-list
