@@ -11,7 +11,7 @@ import { PhotoService } from '../photo/photo.service';
 export class PhotoListComponent implements OnInit {
 
   photos: Photo[] = []; // vai passar o valor photo-list-component
-
+  filter: string = ''; // valor vem do html atraves do event bind
   constructor(
     private photoSerive : PhotoService,
     private activateRoute: ActivatedRoute
