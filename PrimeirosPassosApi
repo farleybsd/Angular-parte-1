@@ -20,3 +20,8 @@ Users
   }
 }
 http://localhost:3000/flavio/photos
+
+
+se nao funcionar 
+npm install sqlite3 --build-from-source
+npm install sqlite
