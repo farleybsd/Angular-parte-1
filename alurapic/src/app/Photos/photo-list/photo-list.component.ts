@@ -12,6 +12,8 @@ export class PhotoListComponent implements OnInit {
 
   photos: Photo[] = []; // vai passar o valor photo-list-component
   filter: string = ''; // valor vem do html atraves do event bind
+  nome= 'flavio';
+
   constructor(
     private photoSerive : PhotoService,
     private activateRoute: ActivatedRoute

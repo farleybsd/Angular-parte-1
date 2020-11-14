@@ -11,7 +11,11 @@
 </div>
 
 {{filter}}
-<ap-photos [photos]="photos"></ap-photos>
+{{nome | uppercase }}
+<ap-photos [photos]="photos | filterByDescription:filter"></ap-photos>
 
 
 
+<!--
+| filterByDescription:filter chamando uma funcao com passagem de parametros
+-->
